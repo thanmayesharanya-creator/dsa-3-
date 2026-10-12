@@ -1,0 +1,191 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Google Maps Route Visualizer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Google Maps Route Visualizer</h1>
+        <p>Using Graph Algorithms - Dijkstra's Algorithm</p>
+    </header>
+
+    <main>
+
+        <section class="control-panel">
+
+            <h2>Find Shortest Route</h2>
+
+            <div class="input-group">
+
+                <label for="source">
+                    Source Location
+                </label>
+
+                <select id="source">
+    <option value="A">Colaba</option>
+    <option value="B">Dadar</option>
+    <option value="C">Bandra</option>
+    <option value="D">Andheri</option>
+    <option value="E">Powai</option>
+    <option value="F">Borivali</option>
+</select>
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="destination">
+                    Destination Location
+                </label>
+                <select id="destination">
+    <option value="A">Colaba</option>
+    <option value="B">Dadar</option>
+    <option value="C">Bandra</option>
+    <option value="D">Andheri</option>
+    <option value="E">Powai</option>
+    <option value="F">Borivali</option>
+</select>
+                
+
+            </div>
+
+            <button onclick="findRoute()">
+                Find Shortest Route
+            </button>
+
+        </section>
+
+        <section class="graph-section">
+
+            <h2>Road Network</h2>
+
+            <div class="graph">
+
+                <div class="node node-a">A</div>
+                <div class="node node-b">B</div>
+                <div class="node node-c">C</div>
+                <div class="node node-d">D</div>
+                <div class="node node-e">E</div>
+                <div class="node node-f">F</div>
+
+                <div class="road road-ab">
+                    <span>13 km</span>
+                </div>
+
+                <div class="road road-ac">
+                    <span>18 km</span>
+                </div>
+
+                <div class="road road-bd">
+                    <span>13 km</span>
+                </div>
+
+                <div class="road road-cd">
+                    <span>8 km</span>
+                </div>
+
+                <div class="road road-ce">
+                    <span>14 km</span>
+                </div>
+
+                <div class="road road-df">
+                    <span>13 km</span>
+                </div>
+
+                <div class="road road-ef">
+                    <span>18 km</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="result" class="result">
+
+            <h2>Route Result</h2>
+
+            <p>
+                Select source and destination and click
+                <b>Find Shortest Route</b>.
+            </p>
+
+        </section>
+
+        <section class="concepts">
+
+            <h2>DSA Concepts Used</h2>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>Graph</h3>
+
+                    <p>
+                        Locations are represented as vertices
+                        and roads as weighted edges.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Adjacency List</h3>
+
+                    <p>
+                        The road network is stored using
+                        adjacency lists.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Min Heap</h3>
+
+                    <p>
+                        A manually implemented min heap is
+                        used to select the nearest location.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>Dijkstra</h3>
+
+                    <p>
+                        Dijkstra's algorithm finds the
+                        shortest route between locations.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Google Maps Route Visualizer |
+            Data Structures and Algorithms
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+/* Header */
+
+header {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+/* Main */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* Control Panel */
+
+.control-panel {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.control-panel h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* Graph */
+
+.graph-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.graph-section h2 {
+    margin-bottom: 20px;
+}
+
+.graph {
+    position: relative;
+    height: 400px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background: #fafafa;
+}
+
+/* Nodes */
+
+.node {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/* Node positions */
+
+.node-a {
+    left: 10%;
+    top: 10%;
+}
+
+.node-b {
+    left: 70%;
+    top: 10%;
+}
+
+.node-c {
+    left: 10%;
+    top: 45%;
+}
+
+.node-d {
+    left: 70%;
+    top: 45%;
+}
+
+.node-e {
+    left: 10%;
+    top: 78%;
+}
+
+.node-f {
+    left: 70%;
+    top: 78%;
+}
+
+/* Roads */
+
+.road {
+    position: absolute;
+    height: 4px;
+    background: #777;
+    transform-origin: left center;
+    z-index: 1;
+}
+
+.road span {
+    position: absolute;
+    background: white;
+    padding: 3px 6px;
+    font-size: 13px;
+    font-weight: bold;
+    top: -22px;
+}
+
+/* Road A-B */
+
+.road-ab {
+    width: 60%;
+    left: 14%;
+    top: 17%;
+}
+
+/* Road A-C */
+
+.road-ac {
+    width: 34%;
+    left: 14%;
+    top: 18%;
+    transform: rotate(90deg);
+}
+
+/* Road B-D */
+
+.road-bd {
+    width: 34%;
+    left: 74%;
+    top: 18%;
+    transform: rotate(90deg);
+}
+
+/* Road C-D */
+
+.road-cd {
+    width: 60%;
+    left: 14%;
+    top: 52%;
+}
+
+/* Road C-E */
+
+.road-ce {
+    width: 32%;
+    left: 14%;
+    top: 53%;
+    transform: rotate(90deg);
+}
+
+/* Road D-F */
+
+.road-df {
+    width: 32%;
+    left: 74%;
+    top: 53%;
+    transform: rotate(90deg);
+}
+
+/* Road E-F */
+
+.road-ef {
+    width: 60%;
+    left: 14%;
+    top: 85%;
+}
+
+/* Result */
+
+.result {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.result h2 {
+    margin-bottom: 15px;
+}
+
+.result p {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+/* DSA Cards */
+
+.concepts {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.concepts h2 {
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f8fafc;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #1e3a8a;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+/* Footer */
+
+footer {
+    background: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    main {
+        width: 95%;
+    }
+}
